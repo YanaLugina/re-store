@@ -1,9 +1,13 @@
 import React from 'react';
 import BookList from "../BookList";
+import ShoppingCart from "../ShoppingCart";
 
 const HomePage = () => {
     return (
-        <BookList />
+        <div>
+            <BookList />
+            <ShoppingCart/>
+        </div>
     )
 };
 
