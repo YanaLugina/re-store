@@ -1,12 +1,15 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { HomePage, CartPage } from "../Pages";
+import ShopHeader from '../ShopHeader';
 
 import style from './App.module.scss';
+import ShoppingCart from "../ShoppingCart";
 
 const App = () => {
     return (
-        <div className={style.App}>
+        <div className="container" role="main">
+            <ShopHeader numItems={5} total={210}/>
             <Switch>
                 <Route
                     path='/'
